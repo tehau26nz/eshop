@@ -1,0 +1,22 @@
+{
+  "name": "eshop",
+  "version": "1.0.0",
+  "description": "MERN shopping store",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tehau26nz/eshop.git"
+  },
+  "author": "Tehaunui Shing Soi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tehau26nz/eshop/issues"
+  },
+  "homepage": "https://github.com/tehau26nz/eshop#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}
