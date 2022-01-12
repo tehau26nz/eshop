@@ -22,7 +22,8 @@
   "homepage": "https://github.com/tehau26nz/eshop#readme",
   "dependencies": {
     "dotenv": "^11.0.0",
-    "express": "^4.17.2"
+    "express": "^4.17.2",
+    "mongoose": "^6.1.6"
   },
   "devDependencies": {
     "concurrently": "^7.0.0",
