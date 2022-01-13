@@ -1,12 +1,12 @@
 const products = [
   {
-    name: 'Airpods Wireless Bluetooth Headphones',
+    name: 'Sony WH-1000XM4 Wireless Over-Ear NC Headphones',
     image: '/images/airpods.jpg',
     description:
-      'Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working',
-    brand: 'Apple',
+      'As soon as you speak to someone, Speak-to-Chat automatically stops the music and lets in ambient sound so you can conduct a conversation - handy if you want to keep your headphones on, or your hands are full.',
+    brand: 'Sony',
     category: 'Electronics',
-    price: 89.99,
+    price: 489.99,
     countInStock: 0,
     rating: 4.5,
     numReviews: 0,
