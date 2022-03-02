@@ -36,3 +36,9 @@ npm run dev
 
 * Website: https://www.linkedin.com/in/tehaunui-s-47b3151a/
 * Github: [@tehau26nz](https://github.com/tehau26nz)
+
+Illustrations
+![Eshop landing page](https://github.com/tehau26nz/eshop/blob/master/images/eshop1.PNG)
+
+Using MongoDB to store the products
+![Eshop product page](https://github.com/tehau26nz/eshop/blob/master/images/eshop2.PNG)
