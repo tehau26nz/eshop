@@ -36,19 +36,3 @@ npm run start
 
 * Website: https://www.linkedin.com/in/tehaunui-s-47b3151a/
 * Github: [@tehau26nz](https://github.com/tehau26nz)
-
-## 🤝 Contributing
-
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/tehau26nz/eshop/issues). You can also take a look at the [contributing guide](https://github.com/tehau26nz/eshop/blob/master/CONTRIBUTING.md).
-
-## Show your support
-
-Give a ⭐️ if this project helped you!
-
-## 📝 License
-
-Copyright © 2022 [Tehaunui Shing Soi](https://github.com/tehau26nz).<br />
-This project is [ISC](https://github.com/tehau26nz/eshop/blob/master/LICENSE) licensed.
-
-***
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
