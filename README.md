@@ -42,5 +42,3 @@ Illustrations
 
 Using MongoDB to store the products
 ![Eshop product page](https://github.com/tehau26nz/eshop/blob/master/images/eshop2.PNG)
-
-Sending data to my event-handler.
