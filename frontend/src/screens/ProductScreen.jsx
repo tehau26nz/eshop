@@ -1,3 +1,5 @@
+import axios from "axios";
+import { useEffect, useState } from "react";
 import {
   Button,
   Card,
@@ -9,15 +11,25 @@ import {
 } from "react-bootstrap";
 import { Link, useParams } from "react-router-dom";
 import Rating from "../components/Rating";
-import products from "../products";
 
 const ProductScreen = () => {
+  const [product, setProduct] = useState({});
   const { id: productId } = useParams();
-  const product = products.find((p) => p._id === productId);
+
+  useEffect(() => {
+    const fetchProduct = async () => {
+      const { data } = await axios.get(`/api/products/${productId}`);
+      setProduct(data);
+    };
+
+    fetchProduct();
+  }, [productId]);
 
   return (
     <>
-      <Link className="btn btn-light my-3">Go back</Link>
+      <Link className="btn btn-light my-3" to="/">
+        Go back
+      </Link>
       <Row>
         <Col md={5}>
           <Image src={product.image} alt={product.name} fluid />
@@ -38,9 +50,13 @@ const ProductScreen = () => {
             <ListGroup.Item>
               Highlights:
               <ul>
-                {product.highlights.map((highlight) => (
-                  <li key={highlight}>{highlight}</li>
-                ))}
+                {product.highlights ? (
+                  product.highlights.map((highlight) => (
+                    <li key={highlight}>{highlight}</li>
+                  ))
+                ) : (
+                  <p>Loading highlights...</p>
+                )}
               </ul>
             </ListGroup.Item>
           </ListGroup>
