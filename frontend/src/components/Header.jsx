@@ -1,6 +1,7 @@
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { FaShoppingCart, FaUser } from "react-icons/fa";
 import logo from "../assets/logo.png";
+import styles from "./header.module.css";
 
 const Header = () => {
   return (
@@ -8,7 +9,7 @@ const Header = () => {
       <Navbar bg="dark" variant="dark" expand="md" collapseOnSelect>
         <Container>
           <Navbar.Brand href="/">
-            <img src={logo} alt="WT"></img>
+            <img className={styles.brandLogo} src={logo} alt="WT"></img>
             Welly Tours
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
