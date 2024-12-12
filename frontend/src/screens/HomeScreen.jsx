@@ -1,30 +1,18 @@
-// import axios from "axios";
-// import { useEffect, useState } from "react";
+import axios from "axios";
+import { useEffect, useState } from "react";
 import { Col, Row } from "react-bootstrap";
 import Product from "../components/Product";
-import products from "../products";
 
 const HomeScreen = () => {
-  // const [products, setProducts] = useState([]);
+  const [products, setProducts] = useState([]);
 
-  // useEffect(() => {
-  //   const fetchProducts = async () => {
-  //     try {
-  //       const { data } = await axios.get("/api/products");
-  //       // Ensure data is an array
-  //       if (Array.isArray(data)) {
-  //         setProducts(data);
-  //       } else {
-  //         console.error("API response is not an array:", data);
-  //         setProducts([]); // Fallback to empty array
-  //       }
-  //     } catch (error) {
-  //       console.error("Error fetching products:", error);
-  //       setProducts([]); // Fallback to empty array on error
-  //     }
-  //   };
-  //   fetchProducts();
-  // }, []);
+  useEffect(() => {
+    const fetchProducts = async () => {
+      const { data } = await axios.get("/api/products");
+      setProducts(data); // Fallback to empty array on error
+    };
+    fetchProducts();
+  }, []);
 
   return (
     <>
