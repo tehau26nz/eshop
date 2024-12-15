@@ -17,7 +17,7 @@ const HomeScreen = () => {
   return (
     <>
       <h1>Best tours</h1>
-      {products.length === 0 ? (
+      {products?.length === 0 ? (
         <p>Loading tours...</p>
       ) : (
         <Row>
